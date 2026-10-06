@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Kadiyam Nurseries — Living Botanical Heritage & Specimen Flora | Godavari Delta</title>
+  <meta name="description" content="Kadiyam Nurseries, East Godavari, Andhra Pradesh. Asia's premier grower of specimen bonsai, avenue trees, indoor botanicals, and lush landscape plants.">
+  <meta name="theme-color" content="#102A20">
+
+  <!-- OpenGraph Metadata -->
+  <meta property="og:title" content="Kadiyam Nurseries — Asia's Premier Botanical Heartland">
+  <meta property="og:description" content="Spread across 1,000+ acres of fertile Godavari silt. Supplying specimen bonsai, avenue trees, indoor exotics, and wholesale landscape flora across India.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Kadiyam Nurseries Home">
+        <span class="brand-glyph" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2L12 22"></path>
+            <path d="M12 7C8 7 5 10 5 13C5 17 9 20 12 22"></path>
+            <path d="M12 11C16 11 19 13.5 19 16C19 19 16 21 12 22"></path>
+          </svg>
+        </span>
+        <div class="brand-text-wrap">
+          <span class="brand-title">KADIYAM</span>
+          <span class="brand-sub">EST. GODAVARI DELTA</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li><a href="#hero" class="nav-link">Overview</a></li>
+          <li><a href="#landscape" class="nav-link">The Delta</a></li>
+          <li><a href="#drone-tour" class="nav-link">Drone Tour</a></li>
+          <li><a href="#collection" class="nav-link">Plant Varieties</a></li>
+          <li><a href="#exhibition" class="nav-link">Specimens</a></li>
+          <li><a href="#visit" class="nav-link">Location</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="https://maps.app.goo.gl/GbKMLw7xo1io1Vtr5" target="_blank" rel="noopener" class="btn-nav-map" title="Open Google Maps">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+          </svg>
+          <span>Find On Maps</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- MOBILE DRAWER -->
+  <div class="mobile-drawer" id="mobileDrawer" aria-hidden="true">
+    <div class="drawer-backdrop" id="drawerBackdrop"></div>
+    <div class="drawer-panel">
+      <div class="drawer-header">
+        <div class="brand-text-wrap">
+          <span class="brand-title">KADIYAM NURSERIES</span>
+          <span class="brand-sub">Andhra Pradesh · India</span>
+        </div>
+        <button class="drawer-close" id="drawerClose" aria-label="Close menu">✕</button>
+      </div>
+      <ul class="drawer-links">
+        <li><a href="#hero" class="drawer-link">00 / Overview &amp; Heritage</a></li>
+        <li><a href="#landscape" class="drawer-link">01 / The Godavari Delta</a></li>
+        <li><a href="#drone-tour" class="drawer-link">02 / Drone Field Tour</a></li>
+        <li><a href="#collection" class="drawer-link">03 / Plant Varieties</a></li>
+        <li><a href="#exhibition" class="drawer-link">04 / Specimen Highlights</a></li>
+        <li><a href="#visit" class="drawer-link">05 / Field Visit &amp; Maps</a></li>
+      </ul>
+      <div class="drawer-footer">
+        <a href="https://maps.app.goo.gl/GbKMLw7xo1io1Vtr5" target="_blank" rel="noopener" class="btn-primary w-full">
+          📍 Navigate on Google Maps
+        </a>
+        <a href="https://wa.me/919440000000?text=Hello%20Kadiyam%20Nurseries,%20I%20would%20like%20to%20enquire%20about%20plants" target="_blank" rel="noopener" class="btn-ghost w-full">
+          💬 WhatsApp Inquiry
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main">
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero-stage" id="hero" aria-label="Living Nursery Heritage">
+      <!-- Fullscreen Living Video Environment (Cleaned MP4 with zero pause button) -->
+      <div class="hero-video-stage" aria-hidden="true">
+        <video
+          id="heroVideo"
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          poster="aerial_view.png"
+        >
+          <source src="nursery_drone_clean.mp4" type="video/mp4">
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-scrim"></div>
+      </div>
+
+      <!-- Hero Spatial Foreground -->
+      <div class="hero-container">
+        <div class="hero-editorial-grid">
+          
+          <!-- LEFT SIDE: Meaningful, Authentic Value Pillars for Kadiyam Nurseries -->
+          <div class="hero-quote-column">
+            <div class="hero-eyebrow">
+              <span class="eyebrow-line"></span>
+              <span>ASIA'S PREMIER NURSERY HUB · GODAVARI DELTA</span>
+            </div>
+
+            <h1 class="hero-statement-title">
+              Rooted in the Soil.<br>
+              <em>Growing India's Green Future.</em>
+            </h1>
+
+            <p class="hero-statement-desc">
+              Over 1,000+ contiguous acres of field-grown specimen trees, handcrafted bonsai, and exotic indoor plants. Direct from generational growers in Kadiyam, East Godavari.
+            </p>
+
+            <!-- Three Meaningful Value Pillars -->
+            <div class="hero-pillars-grid">
+              <div class="pillar-card">
+                <span class="pillar-icon">🌱</span>
+                <div class="pillar-info">
+                  <strong>500+ Plant Varieties</strong>
+                  <span>Aged Bonsai, Royal Palms, Indoor Exotics &amp; Avenue Trees</span>
+                </div>
+              </div>
+              <div class="pillar-card">
+                <span class="pillar-icon">🌾</span>
+                <div class="pillar-info">
+                  <strong>Direct From Growers</strong>
+                  <span>Raised in rich Godavari alluvial soil with no middlemen markups</span>
+                </div>
+              </div>
+              <div class="pillar-card">
+                <span class="pillar-icon">🚛</span>
+                <div class="pillar-info">
+                  <strong>Pan-India Freight</strong>
+                  <span>Specialized root-ball packaging &amp; dedicated truck dispatch nationwide</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-cta-group">
+              <a href="#collection" class="btn-primary">Explore Plants Archive</a>
+              <a href="https://maps.app.goo.gl/GbKMLw7xo1io1Vtr5" target="_blank" rel="noopener" class="btn-ghost">📍 Open in Maps</a>
+              <a href="https://wa.me/919440000000?text=Hello%20Kadiyam%20Nurseries,%20I%20am%20interested%20in%20plant%20enquiry" target="_blank" rel="noopener" class="btn-whatsapp-pill">💬 WhatsApp Inquiry</a>
+            </div>
+          </div>
+
+          <!-- RIGHT SIDE: Real Field Badge & Location Details -->
+          <div class="hero-brand-column">
+            <div class="hero-specimen-badge">
+              <div class="badge-header">
+                <span class="pulse-indicator"></span>
+                <span>LIVE BOTANICAL HUB · KADIYAM</span>
+              </div>
+              <div class="hero-badge-title-wrap">
+                <h2 class="hero-badge-title">KADIYAM</h2>
+                <span class="hero-badge-sub">NURSERIES</span>
+              </div>
+              <p class="hero-loc-tag">
+                16.9070° N, 81.8204° E · East Godavari, Andhra Pradesh
+              </p>
+              
+              <div class="hero-badge-specs">
+                <div class="spec-row">
+                  <span class="spec-k">NURSERY EXPANSE</span>
+                  <span class="spec-v">1,000+ Continuous Acres</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-k">SOIL HERITAGE</span>
+                  <span class="spec-v">Godavari Alluvial Silt &amp; Red Loam</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-k">VISITING HOURS</span>
+                  <span class="spec-v">Open 365 Days · 6 AM – 7 PM</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-k">SUPPLY CAPACITY</span>
+                  <span class="spec-v">Wholesale &amp; Retail Orders</span>
+                </div>
+              </div>
+
+              <a href="https://maps.app.goo.gl/GbKMLw7xo1io1Vtr5" target="_blank" rel="noopener" class="badge-map-btn">
+                <span>View Google Maps Location</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <a href="#heritage-stats" class="hero-scroll-cue" aria-label="Scroll to Nursery Metrics">
+        <span class="scroll-cue-text">THE STATS</span>
+        <span class="scroll-cue-arrow">↓</span>
+      </a>
+    </section>
+
+    <!-- ===================== HORIZONTAL STATS STRIP (BELOW HERO) ===================== -->
+    <section class="hero-stats-horizontal" id="heritage-stats" aria-label="Nursery Metrics">
+      <div class="site-container">
+        <div class="stats-track-horizontal">
+          <div class="stat-col">
+            <span class="stat-col-num">1,000+</span>
+            <span class="stat-col-label">Acres Cultivated</span>
+          </div>
+          <div class="stat-col-divider" aria-hidden="true"></div>
+          <div class="stat-col">
+            <span class="stat-col-num">500+</span>
+            <span class="stat-col-label">Plant Varieties</span>
+          </div>
+          <div class="stat-col-divider" aria-hidden="true"></div>
+          <div class="stat-col">
+            <span class="stat-col-num">Pan-India</span>
+            <span class="stat-col-label">Doorstep Delivery</span>
+          </div>
+          <div class="stat-col-divider" aria-hidden="true"></div>
+          <div class="stat-col">
+            <span class="stat-col-num">30+ Yrs</span>
+            <span class="stat-col-label">Farming Legacy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 01: THE GODAVARI DELTA (AERIAL PANORAMA) ===================== -->
+    <section class="section-landscape" id="landscape" aria-label="01 The Delta Landscape">
+      <div class="site-container">
+        <div class="section-header-row">
+          <div class="section-tag-group">
+            <span class="section-num">01</span>
+            <span class="section-tag-line"></span>
+            <span class="section-tag-name">THE DELTA LANDSCAPE</span>
+          </div>
+          <h2 class="editorial-heading">
+            Asia's Largest Living<br>
+            <em>Botanical Expanse.</em>
+          </h2>
+          <p class="editorial-subline">
+            Vast acres of acclimatized flora nourished by the sacred Godavari river waters and fertile alluvial silt.
+          </p>
+        </div>
+
+        <!-- Archival Framed Panorama -->
+        <div class="archival-photo-frame">
+          <div class="photo-inner-wrap" data-lightbox="aerial_view.png" data-caption="Panoramic Aerial View of Kadiyam Nurseries Cultivation Plots">
+            <img
+              src="aerial_view.png"
+              alt="Panoramic drone view of Kadiyam Nursery fields and coconut groves"
+              class="framed-img"
+              loading="lazy"
+            >
+            <div class="photo-overlay-tag">
+              <span class="tag-geo">📍 KADIYAM AERIAL DRONE SURVEY</span>
+              <span class="tag-zoom">Click to Inspect ↗</span>
+            </div>
+          </div>
+          <div class="frame-caption-bar">
+            <div class="caption-left">
+              <span class="cap-title">CONTINUOUS FIELD CANOPY</span>
+              <span class="cap-desc">Acres of specimen palms, fruit orchards, and shade saplings</span>
+            </div>
+            <div class="caption-right">
+              <span class="cap-coords">16°54'25.1"N · 81°49'13.3"E</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 02: LIVING DRONE TOUR (CLEAN CINEMA PLAYER) ===================== -->
+    <section class="section-tour" id="drone-tour" aria-label="02 Drone Field Tour">
+      <div class="site-container">
+        
+        <div class="section-header-row">
+          <div class="section-tag-group">
+            <span class="section-num">02</span>
+            <span class="section-tag-line"></span>
+            <span class="section-tag-name">DRONE FIELD SURVEY</span>
+          </div>
+          <h2 class="editorial-heading">
+            Witness the Scale<br>
+            <em>from the Sky.</em>
+          </h2>
+          <p class="editorial-subline">
+            A continuous aerial walkthrough across Kadiyam's growing beds, greenhouses, and specimen rows.
+          </p>
+        </div>
+
+        <!-- Cinematic Video Player Container (NO BIG PAUSE BUTTON OVERLAY) -->
+        <div class="cinema-player-card" id="cinemaCard">
+          <div class="cinema-video-wrapper">
+            <video
+              id="tourVideo"
+              class="tour-video-player"
+              autoplay
+              muted
+              loop
+              playsinline
+              preload="auto"
+              poster="aerial_view.png"
+            >
+              <source src="nursery_drone_clean.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+
+            <!-- Sleek Minimalist Controls Bar -->
+            <div class="video-controls-bar">
+              <button class="ctrl-btn" id="ctrlPlayToggle" aria-label="Play/Pause">
+                <span class="ctrl-icon play-icon">⏸</span>
+              </button>
+              <button class="ctrl-btn" id="ctrlMuteToggle" aria-label="Toggle Audio">
+                <span class="ctrl-icon mute-icon">🔇</span>
+              </button>
+              <div class="ctrl-progress-track" id="progressTrack">
+                <div class="ctrl-progress-fill" id="progressFill"></div>
+              </div>
+              <span class="ctrl-badge">AERIAL DRONE · KADIYAM</span>
+              <button class="ctrl-btn" id="ctrlFullscreen" aria-label="Fullscreen">
+                <span class="ctrl-icon">⛶</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="cinema-footer-strip">
+            <div class="cinema-attr">
+              <span class="attr-dot"></span>
+              <span>LIVE CAPTURE: Kadiyam Nursery Main Growing Corridor</span>
+            </div>
+            <div class="cinema-status">
+              <span>Full HD Drone Survey</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 03: THE BOTANICAL ARCHIVE (IMAGE-FOCUSED CATALOGUE) ===================== -->
+    <section class="section-collection" id="collection" aria-label="03 Botanical Specimen Archive">
+      <div class="site-container">
+        
+        <div class="section-header-row">
+          <div class="section-tag-group">
+            <span class="section-num">03</span>
+            <span class="section-tag-line"></span>
+            <span class="section-tag-name">PLANT VARIETIES</span>
+          </div>
+          <h2 class="editorial-heading">
+            Curated Specimens<br>
+            <em>from Kadiyam's Beds.</em>
+          </h2>
+          <p class="editorial-subline">
+            Real photographs of our hand-shaped bonsai, indoor foliage, flowering beds, and ground cover saplings.
+          </p>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="specimen-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Specimens (5)</button>
+          <button class="filter-btn" data-filter="bonsai">Sculpted Bonsai</button>
+          <button class="filter-btn" data-filter="indoor">Indoor Botanicals</button>
+          <button class="filter-btn" data-filter="flowers">Flowering Beds</button>
+          <button class="filter-btn" data-filter="foliage">Ground Cover</button>
+          <button class="filter-btn" data-filter="aerial">Delta Field</button>
+        </div>
+
+        <!-- Visual Specimen Grid -->
+        <div class="specimen-grid">
+          
+          <!-- Card 1: Bonsai Trees -->
+          <div class="specimen-card" data-category="bonsai" data-lightbox="bonsai_trees.png" data-caption="Sculpted Specimen Bonsai Trees with Root Baskets at Kadiyam">
+            <div class="card-media-box">
+              <img src="bonsai_trees.png" alt="Hand-shaped bonsai trees with wicker basket root balls" loading="lazy">
+              <div class="card-tag-pill">SPECIMEN 01 · BONSAI</div>
+              <div class="card-hover-scrim">
+                <span class="hover-inspect-btn">View High-Res ↗</span>
+              </div>
+            </div>
+            <div class="card-meta">
+              <div class="meta-row">
+                <h3 class="meta-title">Sculptured Bonsai &amp; Topiary</h3>
+                <span class="meta-status">Specimen Grade</span>
+              </div>
+              <div class="meta-specs">
+                <span>Aged Ficus &amp; Architectural Form</span> · <span>Wicker-Root Bound</span> · <span>Alluvial Soil</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2: Indoor Plants -->
+          <div class="specimen-card" data-category="indoor" data-lightbox="indoor_plants.png" data-caption="Indoor Aglaonema & Exotic Tropical Foliage in Nursery Shadehouse">
+            <div class="card-media-box">
+              <img src="indoor_plants.png" alt="Indoor potted Aglaonema plants in black nursery containers" loading="lazy">
+              <div class="card-tag-pill">SPECIMEN 02 · INDOOR</div>
+              <div class="card-hover-scrim">
+                <span class="hover-inspect-btn">View High-Res ↗</span>
+              </div>
+            </div>
+            <div class="card-meta">
+              <div class="meta-row">
+                <h3 class="meta-title">Indoor Exotic Aglaonema</h3>
+                <span class="meta-status">Shade House Grown</span>
+              </div>
+              <div class="meta-specs">
+                <span>Variegated Foliage</span> · <span>Air Purifying</span> · <span>Containerized</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Flower Shop & Sapling Rows -->
+          <div class="specimen-card" data-category="flowers" data-lightbox="flower_shop.png" data-caption="Vibrant Flowering Plants & Nursery Ground Display at Kadiyam">
+            <div class="card-media-box">
+              <img src="flower_shop.png" alt="Flowering plants and potted saplings lined up in nursery grounds" loading="lazy">
+              <div class="card-tag-pill">SPECIMEN 03 · FLOWERING</div>
+              <div class="card-hover-scrim">
+                <span class="hover-inspect-btn">View High-Res ↗</span>
+              </div>
+            </div>
+            <div class="card-meta">
+              <div class="meta-row">
+                <h3 class="meta-title">Flowering Beds &amp; Shrubs</h3>
+                <span class="meta-status">In Bloom</span>
+              </div>
+              <div class="meta-specs">
+                <span>Bougainvillea &amp; Ornamentals</span> · <span>Outdoor Sun</span> · <span>Ready For Dispatch</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4: Dense Foliage Rows -->
+          <div class="specimen-card" data-category="foliage" data-lightbox="foliage_rows.png" data-caption="Lush Ground Cover and Dense Foliage Rows in Kadiyam Beds">
+            <div class="card-media-box">
+              <img src="foliage_rows.png" alt="Dense rows of variegated Syngonium and leafy ground cover plants" loading="lazy">
+              <div class="card-tag-pill">SPECIMEN 04 · GROUND COVER</div>
+              <div class="card-hover-scrim">
+                <span class="hover-inspect-btn">View High-Res ↗</span>
+              </div>
+            </div>
+            <div class="card-meta">
+              <div class="meta-row">
+                <h3 class="meta-title">Dense Foliage &amp; Ground Carpet</h3>
+                <span class="meta-status">Mass Propagation</span>
+              </div>
+              <div class="meta-specs">
+                <span>Syngonium &amp; Creepers</span> · <span>Godavari Silt</span> · <span>Landscape Bulk</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5: Aerial Expanse -->
+          <div class="specimen-card card-span-2" data-category="aerial" data-lightbox="aerial_view.png" data-caption="High-Altitude Panorama of Kadiyam Nurseries Cultivation Plots">
+            <div class="card-media-box">
+              <img src="aerial_view.png" alt="High altitude panoramic view of Kadiyam Nursery acreage" loading="lazy">
+              <div class="card-tag-pill">SPECIMEN 05 · AERIAL PANORAMA</div>
+              <div class="card-hover-scrim">
+                <span class="hover-inspect-btn">View High-Res ↗</span>
+              </div>
+            </div>
+            <div class="card-meta">
+              <div class="meta-row">
+                <h3 class="meta-title">Vast Godavari Cultivation Plots</h3>
+                <span class="meta-status">1,000+ Continuous Acres</span>
+              </div>
+              <div class="meta-specs">
+                <span>Field-Grown Specimen Trees</span> · <span>Avenue Palms &amp; Giants</span> · <span>Pan-India Logistics</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 04: EDITORIAL FINE-ART EXHIBITION ===================== -->
+    <section class="section-exhibition" id="exhibition" aria-label="04 Living Specimen Exhibition">
+      <div class="site-container">
+        
+        <div class="section-header-row">
+          <div class="section-tag-group">
+            <span class="section-num">04</span>
+            <span class="section-tag-line"></span>
+            <span class="section-tag-name">SPECIMEN HIGHLIGHTS</span>
+          </div>
+          <h2 class="editorial-heading">
+            Grown with Care,<br>
+            <em>Shaped by Nature.</em>
+          </h2>
+          <p class="editorial-subline">
+            Every plant reflects generations of agricultural mastery in the Godavari basin.
+          </p>
+        </div>
+
+        <!-- Dual Exhibition Showcase -->
+        <div class="exhibition-duet">
+          
+          <!-- Exhibit A: Bonsai Specimen -->
+          <div class="exhibit-panel">
+            <div class="matted-frame" data-lightbox="bonsai_trees.png" data-caption="Sculptured Bonsai specimen tree with root ball wrapped in wicker">
+              <div class="matted-img-wrap">
+                <img src="bonsai_trees.png" alt="Specimen Bonsai trees with wicker root balls" loading="lazy">
+              </div>
+              <div class="matted-caption">
+                <div class="mat-rule"></div>
+                <blockquote class="mat-quote">
+                  HANDCRAFTED SPECIMEN BONSAI — ROOT-BOUND IN ALLUVIAL SILT AND WOVEN WICKER FOR SAFE TRANSIT.
+                </blockquote>
+                <div class="mat-label">KADIYAM · BONSAI COLLECTION</div>
+              </div>
+            </div>
+            <div class="exhibit-details">
+              <div class="exhibit-tag">COLLECTION NO. 01</div>
+              <h3>Living Sculptures</h3>
+              <p>Hand-guided over years of meticulous care. Each root bundle is packed in native red soil and woven wicker for safe transplanting anywhere across India.</p>
+            </div>
+          </div>
+
+          <!-- Exhibit B: Indoor Shadehouse -->
+          <div class="exhibit-panel">
+            <div class="matted-frame" data-lightbox="indoor_plants.png" data-caption="Indoor Aglaonema specimens on shade house display shelf">
+              <div class="matted-img-wrap">
+                <img src="indoor_plants.png" alt="Indoor plants in black pots under nursery shade netting" loading="lazy">
+              </div>
+              <div class="matted-caption">
+                <div class="mat-rule"></div>
+                <blockquote class="mat-quote">
+                  ACCLIMATIZED SHADEHOUSE BOTANICALS — VIBRANT AGLAONEMAS CONDITIONED FOR ARCHITECTURAL INTERIORS.
+                </blockquote>
+                <div class="mat-label">KADIYAM · INDOOR BOTANICALS</div>
+              </div>
+            </div>
+            <div class="exhibit-details">
+              <div class="exhibit-tag">COLLECTION NO. 02</div>
+              <h3>Architectural Foliage</h3>
+              <p>Grown under regulated microclimates in Kadiyam shade-nets. High leaf variegation and robust root systems ensure thriving health in residential and commercial spaces.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 05: SEAMLESS PHOTO MARQUEE ===================== -->
+    <section class="section-marquee" aria-label="Photographic Ribbon">
+      <div class="marquee-track" id="marqueeTrack">
+        <!-- Sequence of 5 user photos -->
+        <div class="mq-item" data-lightbox="aerial_view.png" data-caption="Aerial view of nursery plots"><img src="aerial_view.png" alt="Aerial nursery view" loading="lazy"></div>
+        <div class="mq-item" data-lightbox="bonsai_trees.png" data-caption="Bonsai trees in baskets"><img src="bonsai_trees.png" alt="Bonsai trees" loading="lazy"></div>
+        <div class="mq-item" data-lightbox="indoor_plants.png" data-caption="Indoor exotic plants"><img src="indoor_plants.png" alt="Indoor plants" loading="lazy"></div>
+        <div class="mq-item" data-lightbox="flower_shop.png" data-caption="Flower shop & outdoor beds"><img src="flower_shop.png" alt="Flower shop display" loading="lazy"></div>
+        <div class="mq-item" data-lightbox="foliage_rows.png" data-caption="Dense foliage ground cover rows"><img src="foliage_rows.png" alt="Foliage ground cover" loading="lazy"></div>
+        <!-- Clones for infinite loop -->
+        <div class="mq-item" data-lightbox="aerial_view.png" data-caption="Aerial view of nursery plots"><img src="aerial_view.png" alt="Aerial nursery view" loading="lazy"></div>
+        <div class="mq-item" data-lightbox="bonsai_trees.png" data-caption="Bonsai trees in baskets"><img src="bonsai_trees.png" alt="Bonsai trees" loading="lazy"></div>
+        <div class="mq-item" data-lightbox="indoor_plants.png" data-caption="Indoor exotic plants"><img src="indoor_plants.png" alt="Indoor plants" loading="lazy"></div>
+        <div class="mq-item" data-lightbox="flower_shop.png" data-caption="Flower shop & outdoor beds"><img src="flower_shop.png" alt="Flower shop display" loading="lazy"></div>
+        <div class="mq-item" data-lightbox="foliage_rows.png" data-caption="Dense foliage ground cover rows"><img src="foliage_rows.png" alt="Foliage ground cover" loading="lazy"></div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 06: FIELD VISIT & LOCATION ===================== -->
+    <section class="section-visit" id="visit" aria-label="05 Field Visit & Location">
+      <div class="site-container">
+        
+        <div class="visit-grid">
+          
+          <!-- Contact Info & Invitation -->
+          <div class="visit-content-col">
+            <div class="section-tag-group">
+              <span class="section-num">05</span>
+              <span class="section-tag-line"></span>
+              <span class="section-tag-name">FIELD VISIT &amp; SOURCING</span>
+            </div>
+            
+            <h2 class="editorial-heading">
+              Visit Kadiyam.<br>
+              <em>Walk the Green Rows.</em>
+            </h2>
+
+            <p class="visit-lead">
+              Experience Asia’s historic nursery belt in person. Select your specimens directly from the field beds or arrange bulk dispatch across India.
+            </p>
+
+            <div class="visit-info-list">
+              <div class="visit-info-card">
+                <span class="info-icon">📍</span>
+                <div class="info-text">
+                  <strong>Nursery Location</strong>
+                  <p>Kadiyam, East Godavari District,<br>Andhra Pradesh, India — 533126</p>
+                </div>
+              </div>
+
+              <div class="visit-info-card">
+                <span class="info-icon">🕗</span>
+                <div class="info-text">
+                  <strong>Visiting Hours</strong>
+                  <p>Monday to Sunday: 6:00 AM – 7:00 PM<br><span class="badge-open">Open All 365 Days</span></p>
+                </div>
+              </div>
+
+              <div class="visit-info-card">
+                <span class="info-icon">🚛</span>
+                <div class="info-text">
+                  <strong>Logistics &amp; Transport</strong>
+                  <p>Direct truckload and containerized plant transport to all states across India.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="visit-actions">
+              <a href="https://maps.app.goo.gl/GbKMLw7xo1io1Vtr5" target="_blank" rel="noopener" class="btn-primary">
+                📍 Open Location in Google Maps
+              </a>
+              <a href="https://wa.me/919440000000?text=Hello%20Kadiyam%20Nurseries,%20I%20am%20looking%20for%20plant%20enquiries" target="_blank" rel="noopener" class="btn-ghost">
+                💬 WhatsApp Field Desk
+              </a>
+            </div>
+          </div>
+
+          <!-- Interactive Google Maps Frame -->
+          <div class="visit-map-col">
+            <div class="map-card-wrapper">
+              <div class="map-card-header">
+                <div class="map-status-pill">
+                  <span class="pulse-indicator"></span>
+                  <span>Direct GPS Destination</span>
+                </div>
+                <span class="map-coords">16.9069728° N, 81.820353° E</span>
+              </div>
+              <div class="map-iframe-box">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.5!2d81.8181!3d16.9069728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a37bdb21d5d5ae5%3A0xc68d2ad8030a643f!2sKadiyam%20Nursery!5e0!3m2!1sen!2sin!4v1234567890"
+                  width="100%"
+                  height="100%"
+                  style="border:0;"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Kadiyam Nursery Google Maps Location"
+                ></iframe>
+              </div>
+              <div class="map-card-footer">
+                <a href="https://maps.app.goo.gl/GbKMLw7xo1io1Vtr5" target="_blank" rel="noopener" class="map-ext-link">
+                  <span>Get Driving Directions to Kadiyam Nursery</span>
+                  <span aria-hidden="true">↗</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="site-container">
+      <div class="footer-top-row">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="brand-glyph">🌿</span>
+            <span class="footer-title">KADIYAM NURSERIES</span>
+          </div>
+          <p class="footer-credo">
+            Living Botanical Heritage &amp; Specimen Flora grown from the alluvial soil of Kadiyam, East Godavari, Andhra Pradesh.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-col-title">SECTIONS</span>
+          <ul>
+            <li><a href="#hero">Overview &amp; Heritage</a></li>
+            <li><a href="#landscape">The Godavari Delta</a></li>
+            <li><a href="#drone-tour">Drone Field Tour</a></li>
+            <li><a href="#collection">Plant Varieties</a></li>
+            <li><a href="#exhibition">Specimen Highlights</a></li>
+            <li><a href="#visit">Field Visit &amp; Maps</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <span class="footer-col-title">DIRECT ACCESS</span>
+          <ul>
+            <li><a href="https://maps.app.goo.gl/GbKMLw7xo1io1Vtr5" target="_blank" rel="noopener">Google Maps Destination</a></li>
+            <li><a href="https://wa.me/919440000000" target="_blank" rel="noopener">WhatsApp Sourcing Desk</a></li>
+            <li><a href="#collection">Bonsai Specimens</a></li>
+            <li><a href="#collection">Indoor Botanicals</a></li>
+            <li><a href="#collection">Ground Cover Beds</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span class="footer-copy">© 2026 Kadiyam Nurseries. All photographs &amp; video captured on-site.</span>
+        <span class="footer-loc">Kadiyam · East Godavari · Andhra Pradesh · India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== LIGHTBOX MODAL ===================== -->
+  <div class="lightbox-modal" id="lightboxModal" aria-hidden="true" role="dialog" aria-label="Image Preview">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close image">✕</button>
+    <div class="lightbox-stage">
+      <img src="" alt="" id="lightboxImg" class="lightbox-img">
+      <p class="lightbox-caption" id="lightboxCaption"></p>
+    </div>
+  </div>
+
+  <!-- MOBILE STICKY ACTION BAR -->
+  <div class="mobile-sticky-bar" id="mobileStickyBar">
+    <a href="https://maps.app.goo.gl/GbKMLw7xo1io1Vtr5" target="_blank" rel="noopener" class="sticky-action">
+      <span>📍 Directions</span>
+    </a>
+    <a href="https://wa.me/919440000000?text=Hello%20Kadiyam%20Nurseries,%20I%20would%20like%20to%20enquire%20about%20plants" target="_blank" rel="noopener" class="sticky-action highlight">
+      <span>💬 WhatsApp</span>
+    </a>
+    <a href="#collection" class="sticky-action">
+      <span>🌿 Plants</span>
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
