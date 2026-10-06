@@ -1907,6 +1907,8 @@ button {
 
 /* --------------------------------------------------------------------------
    15. MOBILE STICKY BOTTOM ACTION BAR
+/* --------------------------------------------------------------------------
+   15. MOBILE STICKY BOTTOM ACTION BAR & MASTER MOBILE VIEWPORT FIXES
    -------------------------------------------------------------------------- */
 .mobile-sticky-bar {
   display: none;
@@ -1915,22 +1917,13 @@ button {
   left: 0;
   right: 0;
   z-index: 900;
-  background: rgba(16, 42, 32, 0.96);
+  background: rgba(14, 28, 22, 0.96);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   border-top: 1px solid var(--border-subtle);
-  padding: 0.75rem 1rem;
+  padding: 0.65rem 1rem max(0.65rem, env(safe-area-inset-bottom));
   justify-content: space-around;
-  box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.25);
-}
-
-@media (max-width: 768px) {
-  .mobile-sticky-bar {
-    display: flex;
-  }
-  body {
-    padding-bottom: 60px;
-  }
+  box-shadow: 0 -8px 25px rgba(0, 0, 0, 0.35);
 }
 
 .sticky-action {
@@ -1947,4 +1940,265 @@ button {
 .sticky-action.highlight {
   background-color: var(--soil-terracotta);
   color: #ffffff;
+}
+
+/* ==========================================================================
+   MASTER MOBILE VIEWPORT FIXES (< 768px)
+   ========================================================================== */
+@media (max-width: 768px) {
+  /* Prevent content hiding behind sticky bottom bar */
+  body {
+    padding-bottom: 75px;
+  }
+
+  /* Sticky Action Bar visible */
+  .mobile-sticky-bar {
+    display: flex;
+  }
+
+  /* Fixed Header: Frosted Solid Dark Backdrop so text NEVER overlaps behind */
+  .site-header {
+    padding: 0.85rem 0 !important;
+    background: rgba(14, 28, 22, 0.96) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+    border-bottom: 1px solid rgba(180, 154, 99, 0.25) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4) !important;
+  }
+  .nav-container {
+    padding: 0 1.25rem;
+  }
+  .brand-glyph svg {
+    width: 24px;
+    height: 24px;
+  }
+  .brand-title {
+    font-size: 1.15rem;
+  }
+  .brand-sub {
+    font-size: 0.58rem;
+  }
+
+  /* Hero Section: Proper top spacing and compact mobile proportions */
+  .hero-stage {
+    min-height: auto;
+    padding: 5.5rem 0 2rem;
+    justify-content: flex-start;
+  }
+  .hero-container {
+    padding: 0 1.25rem;
+  }
+  .hero-editorial-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    margin: 0;
+  }
+  .hero-eyebrow {
+    font-size: 0.65rem;
+    margin-bottom: 0.75rem;
+    letter-spacing: 0.16em;
+  }
+  .eyebrow-line {
+    width: 24px;
+  }
+  .hero-statement-title {
+    font-size: clamp(1.85rem, 8vw, 2.4rem);
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+  }
+  .hero-statement-desc {
+    font-size: 0.88rem;
+    line-height: 1.55;
+    margin-bottom: 1.25rem;
+  }
+
+  /* Value Pillars: Compact and Elegant on Mobile */
+  .hero-pillars-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+    margin-bottom: 1.25rem;
+  }
+  .pillar-card {
+    padding: 0.55rem 0.85rem;
+    gap: 0.75rem;
+    background: rgba(16, 42, 32, 0.75);
+  }
+  .pillar-icon {
+    font-size: 1.15rem;
+  }
+  .pillar-info strong {
+    font-size: 0.82rem;
+  }
+  .pillar-info span {
+    font-size: 0.72rem;
+    line-height: 1.35;
+  }
+
+  /* CTA Buttons: Compact 2-column grid on mobile */
+  .hero-cta-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+    width: 100%;
+  }
+  .hero-cta-group .btn-primary,
+  .hero-cta-group .btn-ghost {
+    padding: 0.75rem 0.4rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    text-align: center;
+    width: 100%;
+  }
+  /* Hide redundant WhatsApp button in hero on mobile since sticky bar has it */
+  .hero-cta-group .btn-whatsapp-pill {
+    display: none;
+  }
+
+  /* Right-side Badge Card on Mobile: Sleek Passport Size */
+  .hero-specimen-badge {
+    padding: 1.25rem 1rem;
+    max-width: 100%;
+    margin-top: 0.5rem;
+  }
+  .hero-badge-title {
+    font-size: 1.75rem;
+  }
+  .hero-loc-tag {
+    font-size: 0.74rem;
+    margin-bottom: 0.85rem;
+    padding-bottom: 0.65rem;
+  }
+  .hero-badge-specs {
+    gap: 0.45rem;
+    margin-bottom: 0.85rem;
+  }
+  .spec-row {
+    font-size: 0.72rem;
+    padding-bottom: 0.35rem;
+  }
+  .badge-map-btn {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.72rem;
+  }
+
+  /* Hide scroll cue on mobile */
+  .hero-scroll-cue {
+    display: none;
+  }
+
+  /* Horizontal Stats Strip on Mobile: 2x2 Grid */
+  .hero-stats-horizontal {
+    padding: 1.4rem 0;
+  }
+  .stats-track-horizontal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem 0.75rem;
+  }
+  .stat-col {
+    gap: 0.2rem;
+  }
+  .stat-col-num {
+    font-size: 1.75rem;
+  }
+  .stat-col-label {
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+  }
+  .stat-col-divider {
+    display: none;
+  }
+
+  /* Section Spacings on Mobile */
+  .section-landscape,
+  .section-tour,
+  .section-collection,
+  .section-exhibition,
+  .section-visit {
+    padding: 4rem 0;
+  }
+  .section-header-row {
+    margin-bottom: 2.2rem;
+  }
+  .editorial-heading {
+    font-size: clamp(1.8rem, 7vw, 2.4rem);
+  }
+  .editorial-subline {
+    font-size: 0.92rem;
+  }
+
+  /* Archival Photo Frame */
+  .archival-photo-frame {
+    padding: 0.65rem;
+  }
+  .photo-overlay-tag {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  /* Cinema Video Player */
+  .cinema-footer-strip {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    padding: 0.85rem 1rem;
+  }
+
+  /* Collection Grid & Filter */
+  .specimen-filter-bar {
+    gap: 0.45rem;
+    margin-bottom: 1.8rem;
+  }
+  .filter-btn {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.74rem;
+  }
+  .specimen-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.25rem;
+  }
+  .specimen-card.card-span-2 {
+    grid-column: span 1 !important;
+  }
+
+  /* Exhibition Duet */
+  .exhibition-duet {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+  .matted-frame {
+    padding: 1.25rem 1rem;
+  }
+  .mat-quote {
+    font-size: 1.05rem;
+  }
+
+  /* Marquee */
+  .section-marquee {
+    padding: 2rem 0;
+  }
+  .mq-item {
+    width: 200px;
+    height: 135px;
+  }
+
+  /* Field Visit & Map */
+  .visit-grid {
+    grid-template-columns: 1fr;
+    gap: 2.2rem;
+  }
+  .map-iframe-box {
+    height: 280px;
+  }
+  .visit-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  .visit-actions .btn-primary,
+  .visit-actions .btn-ghost {
+    width: 100%;
+    text-align: center;
+  }
 }
